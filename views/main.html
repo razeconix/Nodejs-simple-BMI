@@ -1,0 +1,45 @@
+
+<html>
+<head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <link rel="stylesheet" href="/css/bootstrap.min.css">
+                <title>BMI Calculator</title>
+</head>
+    <body>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <a class="navbar-brand" href="/">📐 Metric BMI Calculator</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Calculate <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/info">Info</a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                    <br>
+        <form method="POST" action="/result">
+            <center><table>
+                   <tr><th colspan="2" ><b><h1>Metric BMI Calculator</b></h1><br></th></tr>
+                    <tr><td style="width:10%;"><label for="height_meter" class="">Height</label></td><td style="width:90%;"><input type="number" name="meters" size="3" min="0" value="" /> meter <input type="number" name="cm" size="3" min="0" value="" /> cm</td></tr>
+                    <tr><td><label for="weight_kilos" class="">Weight</label></td><td><input type="number" name="kilos" size="3" min="0" step="any" class="bigger" value="" /> kilos</td></tr><br>
+                    <tr><td colspan="2"><div style="float:left;"><br><input type="submit" value="Calculate BMI" /></div></div><div style="clear:both;"></div></td></tr>
+                    </table></center>
+
+           
+    </form>
+<!-- Optional JavaScript -->
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
